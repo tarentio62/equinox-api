@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Bienvenue sur votre espace web !</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+    <style>
+        html,body {
+            font-family: 'Abel', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FDFDFD;
+        }
+
+        header {
+            background: #3A3E45;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-top: 3px solid #27ADA6;
+            height: 45x;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            color: #FFF;
+            font-weight: lighter;
+        }
+        small {
+            font-size: 17px;
+        }
+
+        #main {
+            width: 800px;
+            margin: auto;
+        }
+        #main h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #C4C4C4;
+        }
+
+        #left {
+            margin-top: 28px;
+            margin-left: 28px;
+            padding-right: 30px;
+            float:left;
+        }
+        #right {
+            padding-top: 13px;
+        }
+
+        p {
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PulseHeberg <small>node : frweb2</small></h1>
+    </header>
+
+    <div id="main">
+        <h1>Bienvenue sur votre espace web !</h1>
+
+        <div id="left">
+            <img src="data:image/png;base64,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"
+            alt="server" />
+        </div>
+
+        <div id="right">
+            <p>
+                Votre espace d'hébergement web est fonctionnel.<br />
+                Il ne vous reste plus qu'à envoyer vos fichiers via FTP avec les informations fournies sur votre PulsePanel.<br />
+                N'hésitez pas à contacter le support pour plus d'informations.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
